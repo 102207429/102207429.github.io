@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Calculator</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="add.js"></script>
+</head>
+<body>
+	<style>
+		tr td input {
+			width: 45px;
+			height: 40px;
+			border-radius: 10px;
+		}
+	</style>
+	<form name="Calculator">
+		<table border="2" style="border-radius: 5px">
+			<tr>
+				<td>
+					<input type="text" style="width: 200px; height: 35px; border-radius: 5px" name="Number" size="23"/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="button" value=" 7 " onclick="document.Calculator.Number.value += '7'"/>&nbsp;
+					<input type="button" value=" 8 " onclick="document.Calculator.Number.value += '8'"/>&nbsp;
+					<input type="button" value=" 9 " onclick="document.Calculator.Number.value += '9'"/>&nbsp;
+					<input type="button" value=" / " onclick="document.Calculator.Number.value += '/'"/>
+					<br>
+					<input type="button" value=" 4 " onclick="document.Calculator.Number.value += '4'"/>&nbsp;
+					<input type="button" value=" 5 " onclick="document.Calculator.Number.value += '5'"/>&nbsp;
+					<input type="button" value=" 6 " onclick="document.Calculator.Number.value += '6'"/>&nbsp;
+					<input type="button" value=" * " onclick="document.Calculator.Number.value += '*'"/>
+					<br>
+					<input type="button" value=" 1 " onclick="document.Calculator.Number.value += '1'"/>&nbsp;
+					<input type="button" value=" 2 " onclick="document.Calculator.Number.value += '2'"/>&nbsp;
+					<input type="button" value=" 3 " onclick="document.Calculator.Number.value += '3'"/>&nbsp;
+					<input type="button" value=" - " onclick="document.Calculator.Number.value += '-'"/>
+					<br>
+					<input type="button" value=" c " onclick="document.Calculator.Number.value = ''"/>&nbsp;
+					<input type="button" value=" 0 " onclick="document.Calculator.Number.value += '0'"/>&nbsp;
+					<input type="button" value=" . " onclick="document.Calculator.Number.value += '.'"/>&nbsp;
+					<input type="button" value=" + " onclick="document.Calculator.Number.value += '+'"/>
+					<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="button" value=" = " onclick="document.Calculator.Number.value = eval(Calculator.Number.value)"/>
+					
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
